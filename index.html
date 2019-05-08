@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meine erste HTML Seite</title>
+</head>
+<body>
+    <h1>Meine erste Webseite, als Titel tag</h1>
+    <p>
+        Da steht der Text, der Absatz
+        <b>Hier dick</b>
+        <i>Hier schräg</i>
+        Und da wieder normal
+    </p>
+    <p>
+        Da steht der Text, der Absatz
+        <b>Hier dick</b>
+        <i>Hier schräg</i>
+         Und da wieder normal
+    </p>
+
+    <ul>    <!--Folgende Elemente sind in einer unsortierten Liste-->
+        <li>Das ist mein erstes Element</li>
+        <li>Das ist mein zweites Element</li>
+        <li>Das ist mein drites Element</li>
+    </ul>
+    <ol>    <!--hier sortiert-->
+        <li>Das ist mein erstes Element</li>
+        <li>Das ist mein zweites Element</li>
+        <li>Das ist mein drites Element</li>
+        <li>
+            <ul>
+                <li>Hier verschachtelte Elemente</li>
+                <li>Hier verschachtelte Elemente</li>
+            </ul>
+        </li>
+    </ol>
+
+    <hr>    <!--für Trennstrich, kein Abschlusstag benötigt-->
+
+    <table border="1" width="80%">
+        <tr>
+            <th>Erste Spalte</th>   <!--Semantisch wichtigere Bedeutung wie <td>-->
+            <th>Zweite Spalte</th>
+            <th>Drite Spalte</th>
+        </tr>
+        
+        <tr>
+            <td>1. Zelle</td>
+            <td>2. Zelle</td>
+            <td>3. Zelle</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">4. Zelle</td>   <!--Zeile überspannen-->
+            
+            <td rowspan="2">    <!--Reie überspannen-->
+                <table border="1">
+                    <tr>
+                        <td>Zelle 5</td>
+                        <td>Zelle 8</td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+        <tr>
+            <td>6. Zelle</td>
+            <td>7. Zelle</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <ul>
+        <li><a href="https://www.google.ch/" target="blank">Öffne Google</a></li>   <!--target für neuer tab im Beispiel "blank"-->
+        <li><a href="about_me/about_me.html" target="blank">Öffne über mich</a></li>
+        <li></li>
+    </ul>
+
+    <hr>
+
+    <p>
+        <img width="400" src="data:image/jpeg;base64,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" alt="Das ist ein Bild">
+    </p>
+    
+</body>
+</html>
